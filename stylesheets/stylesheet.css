@@ -348,7 +348,7 @@ Full-Width Styles
 
 .how_to_link {
  display: block;
-  float: left;
+  float: right;
   width: 72px;
   height:70px;
   text-indent: -5000px;
