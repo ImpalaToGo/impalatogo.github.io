@@ -1,10 +1,9 @@
 <!DOCTYPE html>
 <html>
-
   <head>
     <meta charset='utf-8'>
     <meta http-equiv="X-UA-Compatible" content="chrome=1">
-    <meta name="description" content="Impala2go : A standalone distribution of Impala, optimized to work with cloud storage, bypassing HDFS completely.">
+    <meta name="description" content="ImpalaToGo : ImpalaToGo is a fork of Cloudera Impala, separated from Hadoop. It is optimized to work with S3 storage by caching data locally.">
 
     <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
 
@@ -17,16 +16,10 @@
     <div id="header_wrap" class="outer">
         <header class="inner">
           <a id="forkme_banner" href="https://github.com/ImpalaToGo/ImpalaToGo">View on GitHub</a>
-
-          <h1 id="project_title">Impala2go</h1>
-          <h2 id="project_tagline">A standalone distribution of Impala, optimized to work with cloud storage, bypassing HDFS completely.</h2>
-
+          <h1 id="project_title">ImpalaToGo</h1>
+          <h2 id="project_tagline">Is a fork of Cloudera Impala, separated from Hadoop.</h2>
             <section id="downloads">
-	      <a class="how_to_link" href="https://github.com/ImpalaToGo/ImpalaToGo/wiki/How-to-try">How To Try</a>
-<!--
-              <a class="zip_download_link" href="https://github.com/ImpalaToGo/ImpalaToGo/zipball/master">Download this project as a .zip file</a>
-              <a class="tar_download_link" href="https://github.com/ImpalaToGo/ImpalaToGo/tarball/master">Download this project as a tar.gz file</a>
--->
+	      <a class="how_to_link" href="https://github.com/ImpalaToGo/ImpalaToGo/wiki/Quick-Start">Quick Start</a>
             </section>
         </header>
     </div>
@@ -36,36 +29,26 @@
       <section id="main_content" class="inner">
         <h1>
 <a id="impalatogo" class="anchor" href="#impalatogo" aria-hidden="true"><span class="octicon octicon-link"></span></a>ImpalaToGo</h1>
-
-<p>Fork of Cloudera Impala, separated from hadoop. It is optimized to work in cloud with S3 storage by caching data locally on cluster nodes.</p>
-
+<p>ImpalaToGo is a fork of Cloudera Impala, separated from Hadoop. It is optimized to work with S3 storage by caching data locally.</p>
 <h3>
-<a id="why-impalatogo" class="anchor" href="#why-impalatogo" aria-hidden="true"><span class="octicon octicon-link"></span></a>Why ImpalaToGo</h3>
-
+<a id="why-impalatogo" class="anchor" href="#why-impalatogo" aria-hidden="true"><span class="octicon octicon-link"></span></a>Why Choose ImpalaToGo</h3>
 <hr>
 
 <blockquote>
 <ol>
-<li>It is Impala without hadoop. You can take advantage of its fast query engine without managing whole hadoop stack.</li>
-<li>Optimized to work with S3. ImpalaToGo transparently cache data on local drives of cluster nodes.</li>
-<li>Optimized to work in cloud. ImpalaToGo has simple interface to start cluster in cloud.</li>
-<li>Actually the only open source MPP database written in C++</li>
-<li>It gives you almost the same capabilities as Hive over S3, but much faster.</li>
+<li>It is Impala without Hadoop. You can take advantage of its fast query engine without managing the whole Hadoop stack.</li>
+<li>It is optimized to work with S3. ImpalaToGo transparently caches data on local drives.</li>
+<li>It is actually the only open source MPP database written in C++.</li>
+<li>It gives you almost the same capabilities as Hive over S3, but is much faster.</li>
 </ol>
 </blockquote>
-
-<p>How to try: <a href="https://github.com/ImpalaToGo/ImpalaToGo/wiki/How-to-try">https://github.com/ImpalaToGo/ImpalaToGo/wiki/How-to-try</a></p>
-
-<p>Short presentation on ImpalaToGo architecture: <a href="http://www.slideshare.net/DavidGroozman/impala-togo-introduction">http://www.slideshare.net/DavidGroozman/impala-togo-introduction</a></p>
-
+<p>How to try: <a href="https://github.com/ImpalaToGo/ImpalaToGo/wiki/Quick-Start">Quick Start</a></p>
+<p>Short presentation on ImpalaToGo architecture: <a href="http://www.slideshare.net/DavidGroozman/impala-togo-introduction">ImpalaToGo Introduction</a></p>
 <h3>
-<a id="what-we-add-to-cloudera-impala" class="anchor" href="#what-we-add-to-cloudera-impala" aria-hidden="true"><span class="octicon octicon-link"></span></a>What we add to Cloudera Impala?</h3>
-
-<p>We are developing caching layer which use local drives to cache access to remote storage. Its advantage can be easy to be seen when working with S3.</p>
-
+<a id="what-we-add-to-cloudera-impala" class="anchor" href="#what-we-add-to-cloudera-impala" aria-hidden="true"><span class="octicon octicon-link"></span></a>What have we added to Cloudera Impala?</h3>
+<p>We have developed a caching layer which uses local drives to provide cache access for remote storage. Its advantages can easily be seen when working with S3.</p>
 <h2>
 <a id="license" class="anchor" href="#license" aria-hidden="true"><span class="octicon octicon-link"></span></a>License</h2>
-
 <p><a href="http://www.apache.org/licenses/LICENSE-2.0.htm">Apache License</a></p>
 
 <h4>
@@ -77,21 +60,18 @@
     <div id="footer_wrap" class="outer">
       <footer class="inner">
         <p class="copyright">Impala2go maintained by <a href="https://github.com/ImpalaToGo">ImpalaToGo</a></p>
-        <p>Published with <a href="http://pages.github.com">GitHub Pages</a></p>
       </footer>
     </div>
 
-              <script type="text/javascript">
-            var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
-            document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
-          </script>
-          <script type="text/javascript">
-            try {
-              var pageTracker = _gat._getTracker("UA-57890489-1");
-            pageTracker._trackPageview();
-            } catch(err) {}
-          </script>
-
-
+<script type="text/javascript">
+  var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+  document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+  try {
+    var pageTracker = _gat._getTracker("UA-57890489-1");
+    pageTracker._trackPageview();
+  } catch(err) {}
+</script>
   </body>
 </html>
